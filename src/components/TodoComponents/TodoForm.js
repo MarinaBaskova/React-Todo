@@ -4,16 +4,17 @@ function TodoForm(props) {
 
     return (
         <form>
-            <input
-                type="text"
-                value={props.task}
-                name="task"
-                placeholder="Task"
-                onChange={props.handleChanges}
+            <div className="form-wrapper">
+                <input
+                    type="text"
+                    value={props.task}
+                    name="task"
+                    placeholder="Task"
+                    onChange={props.handleChanges}
 
-            />
-            <button onClick={props.updateTodoList}>Add Todo</button>
-
+                />
+                <button className="add-todo-btn" onClick={props.updateTodoList}>Add</button>
+            </div>
         </form>
 
     )

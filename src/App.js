@@ -83,7 +83,7 @@ class App extends React.Component {
 
     return (
       <div className="app-wrapper">
-        <h2>Welcome to your Todo App!</h2>
+        <h2 className="todo-title">Todos</h2>
         <TodoList
           todoListProp={this.state.todos}
           toggleItem={this.toggleItem}
@@ -96,7 +96,7 @@ class App extends React.Component {
           updateTodoList={this.updateTodoList}
           clearCompleted={this.clearCompleted}
         />
-        <button onClick={this.clearCompleted}>Clear Completed</button>
+        <button className="clear-todo-btn" onClick={this.clearCompleted}>Clear Completed</button>
       </div>
     );
   }
