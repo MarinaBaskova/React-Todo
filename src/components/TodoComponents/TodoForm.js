@@ -3,7 +3,7 @@ import React from 'react';
 function TodoForm(props) {
 
     return (
-        <form>
+        <form onSubmit={props.updateTodoList}>
             <div className="form-wrapper">
                 <input
                     type="text"
@@ -11,9 +11,9 @@ function TodoForm(props) {
                     name="task"
                     placeholder="Task"
                     onChange={props.handleChanges}
-
+                    required
                 />
-                <button className="add-todo-btn" onClick={props.updateTodoList}><i className="fa fa-plus"></i></button>
+                <button type="submit" className="add-todo-btn"><i className="fa fa-plus"></i></button>
             </div>
         </form>
 
