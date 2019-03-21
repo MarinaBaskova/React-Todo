@@ -5,7 +5,7 @@
     background: #965fe4;
     background: linear-gradient(45deg, #9152bd, #ff9068);
     height: 100vh;
-    font-family: sans-serif;
+    font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
 }
 
 
@@ -36,6 +36,8 @@
     line-height: 1.5;
     font-size: 25px;
     padding: 0 204px 0 15px;
+    border-bottom: 1px solid grey;
+    margin-bottom: 15px;
 
 }
 p {
@@ -48,6 +50,7 @@ input{
     padding-right: 90px;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 10px;
     font-size: 16px;
     background: #e8ebed;
     margin: 0 auto;
@@ -63,12 +66,16 @@ input{
     display: flex;
 }
 
+.todo-list-wrapper{
+    overflow-x: hidden;
+}
+
 
 .add-todo-btn{
     background-color: #4448e6bf;
     border-radius: 5px;
     color: white;
-    font-size: 16px;
+    font-size: 20px;
     padding: 0px 29px;
     outline: none;
 }
