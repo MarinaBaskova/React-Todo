@@ -13,7 +13,7 @@ function TodoForm(props) {
                     onChange={props.handleChanges}
 
                 />
-                <button className="add-todo-btn" onClick={props.updateTodoList}><i class="fa fa-plus"></i></button>
+                <button className="add-todo-btn" onClick={props.updateTodoList}><i className="fa fa-plus"></i></button>
             </div>
         </form>
 
