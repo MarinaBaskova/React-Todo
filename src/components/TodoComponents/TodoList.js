@@ -7,9 +7,9 @@ import Todo from './Todo';
 function TodoList(props) {
 
     return (
-        <div>
+        <div className="todo-list-wrapper">
             {props.todoListProp.map((todoTask, index) => (
-                <Todo todoProp={todoTask} key={index} />
+                <Todo todoProp={todoTask} key={index} toggleItem={props.toggleItem} />
             ))}
 
             {/* //{todoTask.id} */}
